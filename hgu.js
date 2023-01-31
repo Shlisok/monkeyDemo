@@ -11,6 +11,17 @@
 // ==/UserScript==
 (function () {
         'use strict';
-        console.log("开始编写")
+        var table = document.getElementById("tblView");
+
+        //选中所有单选框
+        var radios = table.getElementsByTagName("input");
+
+        //遍历所有按钮，选择满分的选项
+        for (var i = 0; i < radios.length; i++){
+            if (radios[i].value === "5_1"){
+                radios[i].checked = true;
+            }
+        }
+
     }
 )();
