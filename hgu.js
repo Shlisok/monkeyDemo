@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         河地大自动教学评估
 // @namespace 	 shlisok
-// @version      0.4
-// @description  河北地质大学教务系统自动教学评估
+// @version      1.0
+// @description  河北地质大学教务系统自动完成选择，尚未开发自动提交，问就是懒
 // @author       shl
 // @icon         https://bkimg.cdn.bcebos.com/pic/6f061d950a7b02083188dae96ad9f2d3572cc871?x-bce-process=image/resize,m_lfit,w_536,limit_1
 // @match        *://202.206.144.35/*
@@ -13,6 +13,8 @@
 (function () {
         'use strict';
         //jquery写法
+        $("#tblView input[value='4_1']").prop("checked", true);
         $("#tblView input[value='5_1']").prop("checked", true);
+        $("#tblView input[value='6_1']").prop("checked", true);
     }
 )();
