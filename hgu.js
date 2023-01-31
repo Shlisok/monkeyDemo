@@ -11,6 +11,18 @@
 // ==/UserScript==
 (function () {
         'use strict';
-        console.log("开始测试")
+        // 选取table
+        var table = document.getElementById("tblView");
+
+        // 选取所有单选框
+        var radios = table.getElementsByTagName("input");
+
+        //遍历所有单选，并选中所有优秀的选项
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].value === "5_1") {
+                radios[i].checked = true;
+            }
+        }
+
     }
 )();
