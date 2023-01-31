@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         河地大自动教学评估（暂时版本）
+// @name         河地大自动教学评估
 // @namespace 	 shlisok
 // @version      1.3
 // @description  河北地质大学教务系统自动完成选择，尚未开发自动提交，问就是懒
